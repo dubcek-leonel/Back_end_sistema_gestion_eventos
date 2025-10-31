@@ -5,8 +5,11 @@ import jakarta.persistence.Id;
 
 @Entity
 public class users {
+
     @Id
     private Long id;
+
+    private String nombre;
 
     private String email;
 
