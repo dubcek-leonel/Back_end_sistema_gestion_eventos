@@ -1,11 +1,14 @@
 package org.example.sis_eventos.entity;
 
 import jakarta.persistence.*;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Entity
-public class users {
+@NoArgsConstructor
+@Table(name ="users")
+public class usersEntity {
     @Id
     private Long id;
 
