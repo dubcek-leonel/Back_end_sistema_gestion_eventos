@@ -15,8 +15,8 @@ public interface EventoMapper {
 
     EventoDTO eventoEntityAEventoDTO(EventoEntity eventoEntity);
 
-    List<EventoDTO> eventosEntityAEventoDTOs(List<EventoEntity> eventosEntity);
+    List<EventoDTO> eventosEntitiesAEventoDTOs(List<EventoEntity> eventosEntity);
 
-    EventoEntity eventoDTOAEventoEntity(EventoDTO eventoDTO);
+    EventoEntity EventoDTOAEventoEntity(EventoDTO eventoDTO);
 
 }
