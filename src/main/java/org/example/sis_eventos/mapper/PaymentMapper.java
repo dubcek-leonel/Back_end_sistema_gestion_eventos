@@ -18,7 +18,7 @@ public interface PaymentMapper {
     List<PaymentDTO> paymentsEntitiesAPaymentDTOs(List<PaymentEntity> paymentEntities);
 
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "fechaCreacion", ignore = true)
-    @Mapping(target = "fechaModificacion", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
     PaymentEntity paymentDTOAPaymentEntity(PaymentDTO paymentDTO);
 }
