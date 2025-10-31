@@ -12,11 +12,11 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "payments")
-public class Payment {
+public class PaymentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Generación IDENTITY para Long
-    private Long id; // Tipo de dato Long para el ID
+    private Long id;
 
     @NotNull(message = "El ID de registro no puede ser nulo")
     @Column(name = "registration_id", nullable = false)
