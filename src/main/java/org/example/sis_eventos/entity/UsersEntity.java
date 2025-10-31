@@ -1,18 +1,23 @@
 package org.example.sis_eventos.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Date;
 
 @Entity
 @NoArgsConstructor
 @Table(name ="users")
-public class usersEntity {
+@Getter
+@Setter
+public class UsersEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombre;
+
     private String email;
 
     private String studentCode;

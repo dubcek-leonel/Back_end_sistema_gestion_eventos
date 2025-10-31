@@ -4,15 +4,19 @@ import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-public class usersDTO {
+import java.util.Date;
+
+@Getter
+@NoArgsConstructor
+@Setter
+public class UsersDTO {
 
     private Long id;
-    @Column(nullable = false)
-    @Size(min = 1, max = 50)
-    @NotBlank
 
-    private String nombre;
     @Column(nullable = false)
     @Size(min = 1, max = 50)
     @NotBlank
@@ -25,7 +29,7 @@ public class usersDTO {
 
     private String fullName;
     @Column(nullable = false)
-    
+
 
     private String role;
 
@@ -40,4 +44,6 @@ public class usersDTO {
     private String profileImage;
     private boolean isActive;
 
+    private Date createdAt;
+    private Date modifiedAt;
 }
