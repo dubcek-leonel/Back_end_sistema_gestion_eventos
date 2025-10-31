@@ -20,7 +20,7 @@ public class PaymentDTO {
     private Date verifiedAt;
     private String notes;
 
-    private Date fechaCreacion;
-    private Date fechaModificacion;
+    private Date createdAt;
+    private Date updatedAt;
 
 }

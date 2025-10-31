@@ -57,21 +57,20 @@ public class PaymentEntity {
     private String notes;
 
     @Column(name = "created_at", nullable = false, updatable = false)
-    private Date fechaCreacion;
+    private Date createdAt;
 
     @Column(name = "updated_at", nullable = false)
-    private Date fechaModificacion;
+    private Date updatedAt;
 
-    // Métodos de ciclo de vida
     @PrePersist
     public void prePersist() {
         Date now = new Date();
-        this.fechaCreacion = now;
-        this.fechaModificacion = now;
+        this.createdAt = now;
+        this.updatedAt = now;
     }
 
     @PreUpdate
     public void preUpdate() {
-        this.fechaModificacion = new Date();
+        this.updatedAt = new Date();
     }
 }
