@@ -10,7 +10,6 @@ import java.util.Date;
 @Getter
 @Setter
 @RequiredArgsConstructor
-@NoArgsConstructor
 public class EventDatesDTO {
     private Long id;
 
