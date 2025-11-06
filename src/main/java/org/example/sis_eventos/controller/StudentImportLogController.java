@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/student-import-logs")
+@CrossOrigin(origins = "http://localhost:4200")
 public class StudentImportLogController {
 
     @Autowired
